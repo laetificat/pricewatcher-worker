@@ -1,0 +1,15 @@
+[worker]
+	# The amount of minutes a worker should sleep after the queue has been emptied.
+	sleep = 5
+	# Timeout between calls to the same domain.
+	timeout = 2
+
+[log]
+	# The minimum level the application should log.
+	minimum_level = "info"
+
+	[sentry]
+		# Enable logging errors to Sentry.
+    	enabled = true
+    	# The DSN you get from Sentry.
+    	dsn = "https://yoursentrydsn@sentry.io/link"
